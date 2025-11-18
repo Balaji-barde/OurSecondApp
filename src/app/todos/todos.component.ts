@@ -1,6 +1,7 @@
 import { Component, ElementRef, OnInit, ViewChild } from "@angular/core";
 import { Itodo } from "../models/todos_Interface";
 
+
 @Component({
   selector: "app-todos",
   templateUrl: "./todos.component.html",
@@ -30,7 +31,6 @@ export class TodosComponent implements OnInit {
   }
 
 
-  formMode: "ADD" | "EDIT" = "ADD";
 
   OnTodoEdit(todoObj: Itodo) {
     // edit mode should be on

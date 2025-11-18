@@ -1,0 +1,11 @@
+<app-child1
+ (MsgFromchild)="Onclick($event)"
+ [MsgFP]="MsgFromParent">
+
+</app-child1>
+
+<h4>Msg From Child</h4>
+<p *ngIf="msg1"
+ class="alert alert-danger">
+    {{msg1}}
+</p>

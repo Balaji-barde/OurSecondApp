@@ -1,0 +1,36 @@
+ <!-- 01 -->
+ <div class="form-group">
+    <input #productName type="text" class="form-control">
+</div>
+
+<button (click)="onSearch()" class="btn btn-primary">serach</button>
+
+<p class="alert alert-info" *ngIf="searchProductName">
+    The product name is 
+    {{searchProductName}} </p>
+
+
+
+
+    <!-- 02 [(ngModel)] -->
+
+
+    <div class="form-group">
+        <input [(ngModel)]="searchItems" type="text" class="form-control">
+    </div>
+
+    <button (click)="onSearched()" class="btn btn-info">search</button>
+
+
+    <!-- 03. coustom -->
+
+
+
+    <div class="form-group">
+        <input  #prodCatg type="text" class="form-control" placeholder="Enter Product">
+    </div>
+    <button (click)="searchPro()" class="btn btn-info ">searchP</button>
+
+    <p class="alert alert-info" *ngIf="onSearch">
+        {{searchValue}}
+    </p>

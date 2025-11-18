@@ -1,0 +1,14 @@
+
+<app-child2
+
+(MsgFromStd)="Onclick($event)"
+
+[MsgFromT]="MsgFromTeacher">
+
+</app-child2>
+
+<h1>Msg From Std</h1>
+<p  *ngIf="msg1" 
+class="alert alert-success">
+    {{msg1}}
+</p>

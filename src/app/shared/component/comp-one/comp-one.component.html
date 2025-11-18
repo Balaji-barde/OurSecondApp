@@ -1,0 +1,13 @@
+
+<app-comp-two
+ 
+(MsgFromChild)="msg($event)"
+  [MsgFromP]="MsgFromParent">
+</app-comp-two>
+
+<h2>Msg From Child</h2>
+<p
+*ngIf="msg1"
+class="alert alert-info">
+    {{msg1}}
+</p>

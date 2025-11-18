@@ -1,0 +1,26 @@
+<!-- we are going to bind the event on button and target input  elemnts -->
+
+<!-- 01 By using EleRef -->
+<!--  
+ <div class="form-group">
+    <input #productName  type="text" class="from-control">
+ </div>
+ <button
+ (click)="onSearchProd(productName)" class="btn btn-primary">searchProducts</button> -->
+
+<!--********************************************** -->
+
+<!-- 02.@viewchild() -->
+
+<div class="form-group">
+    <input #prodcutName type="text" class="from-control">
+</div>
+
+<button (click)="onSearch()" class=" btn btn-primary">search</button>
+
+<!-- 01.eleREf -->
+
+<div class="form-group">
+    <input #productName  type="text" class="from-control">
+</div>
+<button (click)="onSearchBtn(productName)"  class="btn btn-primary">search</button>

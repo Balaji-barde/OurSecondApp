@@ -1,0 +1,26 @@
+<h2 class="text-primary">Task 1</h2>
+
+<p class="alert alert-info">
+    {{ student.name }} scored
+    {{  student.grades.subjects[0].marks }} in {{  student.grades.subjects[0].name }}
+    and
+    {{  student.grades.subjects[1].marks }} in {{  student.grades.subjects[1].name }},
+    making her overall grade {{  student.grades.overall }}%.
+</p>
+
+<h2 class="text-secondary">Task 2</h2>
+
+<p class="alert alert-danger">
+    " The {{meeting.title}} will take {{meeting.schedule.location}} on {{meeting.schedule.date}} at
+    {{meeting.schedule.time}} in {{meeting.schedule.location.room}}, {{meeting.schedule.location.city}}."
+</p>
+
+<h2 class="text-secondary">Task 3</h2>
+
+<p class="alert alert-info">
+    <!-- // "Arnav’s Chill Vibes playlist includes Ocean Eyes by Billie Eilish." -->
+
+    "{{playlist.createdBy}}'s {{playlist.name}} playlist includes {{playlist.songs[0].title}} by
+    {{playlist.songs[0].artist}}
+    "
+</p>

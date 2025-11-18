@@ -1,0 +1,72 @@
+<div class="row">
+    <div class="col-md-4">
+        <!-- form -->
+        <div class="card">
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="fname"> First Name</label>
+                    <input #fname type="text" id="fname" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="lname"> Last Name</label>
+                    <input #lname type="text" id="lname" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input #email type="text" id="email" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="contact"> Contact</label>
+                    <input #contact type="text" id="contact" class="form-control" />
+                </div>
+                <button *ngIf="!isInEditMode" (click)="onStdAdd()" class="btn btn-info btn-block">
+                    AddStd
+                </button>
+                <button *ngIf="isInEditMode" (click)="OnStdUpdate()" class="btn btn-info btn-block">
+                    StdUpdate
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-8">
+        <!-- table -->
+        <div class="card">
+            <div class="card-body">
+                <div class="table-responsive">
+                    <div class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Sr no</th>
+                                <th>Full Name</th>
+                                <th>Email</th>
+                                <th>Contact</th>
+                                <th>Edit</th>
+                                <th>Remove</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let std of studentsArr; index as i;trackBy: trackByStdId">
+                                <td>{{ i + 1 }}</td>
+                                <td>{{ std.fname | titlecase }} {{ std.lname }}</td>
+                                <td>{{ std.email }}</td>
+                                <td>{{ std.contact }}</td>
+                                <td>
+
+
+                                    <button mat-icon-button color="primary" (click)="onStdEdit(std)">
+                                        <mat-icon>edit</mat-icon>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button mat-icon-button color="warn" (click)="onStdRemove(std.StdId)">
+                                        <mat-icon>delete</mat-icon>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
