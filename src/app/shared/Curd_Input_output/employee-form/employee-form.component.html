@@ -1,0 +1,21 @@
+<div class="card">
+    <div class="card-body">
+        <form #todoform="ngForm" (ngSubmit)="OnToDoAdd(todoform)">
+            <div class="form-group">
+
+                <label for="fname">Employee Name</label>
+                <input type="text" required ngModel name="empName" id="fname" class="form-control">
+            </div>
+            <!-- <button type="submit" [disabled]="todoform.invalid" class="btn btn-info btn-block">Add Employee</button> -->
+            <button mat-raised-button color="primary" type="submit" [disabled]="todoform.invalid" class="btn-block">
+                Add Employee
+            </button>
+
+
+
+
+
+
+        </form>
+    </div>
+</div>

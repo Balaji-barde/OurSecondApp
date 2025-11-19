@@ -1,0 +1,13 @@
+<div class="card">
+    <div class="card-body">
+        <form #todoForm="ngForm" (ngSubmit)="OnTodoAdd(todoForm)">
+            <div class="form-group">
+                <label for="todoItem"> Warrior Name</label>
+                <input type="text" ngModel required name="Wname" id="todoItem" class="form-control">
+            </div>
+            <button mat-raised-button color="primary" type="submit" [disabled]="todoForm.invalid" class="btn-block">
+                Add Warrior
+            </button>
+        </form>
+    </div>
+</div>

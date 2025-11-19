@@ -1,0 +1,20 @@
+<div class="card">
+    <div class="card-body">
+        <ul class="list-group">
+            <li *ngFor="let t of tools" class="list-group-item d-flex justify-content-between">
+                <strong>
+                    {{t.ToolName}}
+                </strong>
+                 <div>
+                    <button mat-mini-fab color="primary" class="mr-2">
+                        <mat-icon>edit</mat-icon>
+                    </button>
+
+                    <button mat-mini-fab color="warn">
+                        <mat-icon>delete</mat-icon>
+                    </button>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

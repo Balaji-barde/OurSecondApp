@@ -1,0 +1,14 @@
+<div class="card">
+    <div class="card-body">
+        <form #todoForm="ngForm" (ngSubmit)="OnTodoAdd(todoForm)">
+            <div class="form-group">
+                <label for="sport"> Sports </label>
+                <input type="text" ngModel required name="sportsName" id="sport" class="form-control">
+            </div>
+
+                <button mat-raised-button color="primary" type="submit" [disabled]="todoForm.invalid" class="btn-block">
+                Add Sports
+            </button>
+        </form>
+    </div>
+</div>

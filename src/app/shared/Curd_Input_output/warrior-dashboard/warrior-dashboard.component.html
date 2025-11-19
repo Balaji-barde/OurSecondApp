@@ -1,0 +1,12 @@
+<div class="row">
+    <div class="col-md-6">
+        <app-warrior-form
+         (emitTodo)="getNewWarrior($event)"
+        
+        
+        ></app-warrior-form>
+    </div>
+    <div class="col-md-6">
+        <app-warrior-list [warroirs]="warroirsArr"></app-warrior-list>
+    </div>
+</div>

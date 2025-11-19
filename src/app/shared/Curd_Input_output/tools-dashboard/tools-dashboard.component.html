@@ -1,0 +1,11 @@
+<div class="row">
+    <div class="col-md-6">
+        <app-tools-form
+        (emitTool)="GetNewTools($event)"
+        
+        ></app-tools-form>
+    </div>
+    <div class="col-md-6">
+        <app-tools-list [tools]="toolsArr"></app-tools-list>
+    </div>
+</div>

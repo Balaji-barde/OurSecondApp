@@ -34,6 +34,21 @@ import { Parent6Component } from './shared/Input_Output_decorator/parent6/parent
 import { Child6Component } from './shared/Input_Output_decorator/child6/child6.component';
 import { Parent7Component } from './shared/Input_Output_decorator/parent7/parent7.component';
 import { Child7Component } from './shared/Input_Output_decorator/child7/child7.component';
+import { TodoDashboardComponent } from './shared/Curd_Input_output/todo-dashboard/todo-dashboard.component';
+import { TodoFormComponent } from './shared/Curd_Input_output/todo-form/todo-form.component';
+import { TodoListComponent } from './shared/Curd_Input_output/todo-list/todo-list.component';
+import { EmployeeDashboardComponent } from './shared/Curd_Input_output/employee-dashboard/employee-dashboard.component';
+import { EmployeeFormComponent } from './shared/Curd_Input_output/employee-form/employee-form.component';
+import { EmployeeListComponent } from './shared/Curd_Input_output/employee-list/employee-list.component';
+import { ToolsDashboardComponent } from './shared/Curd_Input_output/tools-dashboard/tools-dashboard.component';
+import { ToolsListComponent } from './shared/Curd_Input_output/tools-list/tools-list.component';
+import { ToolsFormComponent } from './shared/Curd_Input_output/tools-form/tools-form.component';
+import { SportsDashboardComponent } from './shared/Curd_Input_output/sports-dashboard/sports-dashboard.component';
+import { SportsListComponent } from './shared/Curd_Input_output/sports-list/sports-list.component';
+import { SportsFormComponent } from './shared/Curd_Input_output/sports-form/sports-form.component';
+import { WarriorDashboardComponent } from './shared/Curd_Input_output/warrior-dashboard/warrior-dashboard.component';
+import { WarriorListComponent } from './shared/Curd_Input_output/warrior-list/warrior-list.component';
+import { WarriorFormComponent } from './shared/Curd_Input_output/warrior-form/warrior-form.component';
 
 @NgModule({
   declarations: [
@@ -61,6 +76,21 @@ import { Child7Component } from './shared/Input_Output_decorator/child7/child7.c
     Child6Component,
     Parent7Component,
     Child7Component,
+    TodoDashboardComponent,
+    TodoFormComponent,
+    TodoListComponent,
+    EmployeeDashboardComponent,
+    EmployeeFormComponent,
+    EmployeeListComponent,
+    ToolsDashboardComponent,
+    ToolsListComponent,
+    ToolsFormComponent,
+    SportsDashboardComponent,
+    SportsListComponent,
+    SportsFormComponent,
+    WarriorDashboardComponent,
+    WarriorListComponent,
+    WarriorFormComponent,
     // TableViewComponent,
     // CardViewComponent,
     // ListViewComponent,

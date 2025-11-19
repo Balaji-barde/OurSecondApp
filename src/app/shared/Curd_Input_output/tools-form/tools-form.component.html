@@ -1,0 +1,22 @@
+<div class="card">
+    <div class="card-body">
+        <form #toolform="ngForm" (ngSubmit)="OnTodoAdd(toolform)">
+            <div class="form-group">
+                <label for="skill">Tools</label>
+                <input type="text" required ngModel name="ToolName" class="form-control" id="skill">
+            </div>
+           
+
+            <button mat-raised-button color="primary" type="submit" [disabled]="toolform.invalid" class="btn-block">
+                Add Tools
+            </button>
+
+
+
+
+
+
+        </form>
+
+    </div>
+</div>

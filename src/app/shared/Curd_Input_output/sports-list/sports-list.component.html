@@ -1,0 +1,21 @@
+<div class="card">
+    <div class="card-body">
+        <ul class="list-group">
+            <li *ngFor="let s of sport  " class="list-group-item  d-flex justify-content-between">
+                <strong>
+                    {{s.sportsName}}
+                </strong>
+                <div>
+                    <button mat-mini-fab color="primary" class="fab-shadow mr-2">
+                        <mat-icon>edit</mat-icon>
+                    </button>
+                    <button mat-mini-fab color="warn" class="fab-shadow">
+                        <mat-icon>delete</mat-icon>
+                    </button>
+
+
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
