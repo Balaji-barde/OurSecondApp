@@ -49,6 +49,9 @@ import { SportsFormComponent } from './shared/Curd_Input_output/sports-form/spor
 import { WarriorDashboardComponent } from './shared/Curd_Input_output/warrior-dashboard/warrior-dashboard.component';
 import { WarriorListComponent } from './shared/Curd_Input_output/warrior-list/warrior-list.component';
 import { WarriorFormComponent } from './shared/Curd_Input_output/warrior-form/warrior-form.component';
+import { StdCurd1Component } from './shared/component/std-curd1/std-curd1.component';
+import { OverlayModule } from "@angular/cdk/overlay";
+import { TodoCurd1Component } from './shared/component/todo-curd1/todo-curd1.component';
 
 @NgModule({
   declarations: [
@@ -91,6 +94,8 @@ import { WarriorFormComponent } from './shared/Curd_Input_output/warrior-form/wa
     WarriorDashboardComponent,
     WarriorListComponent,
     WarriorFormComponent,
+    StdCurd1Component,
+    TodoCurd1Component,
     // TableViewComponent,
     // CardViewComponent,
     // ListViewComponent,
@@ -105,9 +110,9 @@ import { WarriorFormComponent } from './shared/Curd_Input_output/warrior-form/wa
     MatIconModule,
     MatDialogModule,
     FormsModule,
-    MatSnackBarModule
-    
-  ],
+    MatSnackBarModule,
+    OverlayModule
+],
   providers: [],
   bootstrap: [AppComponent],
 })

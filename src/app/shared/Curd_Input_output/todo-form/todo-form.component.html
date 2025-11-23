@@ -1,13 +1,20 @@
+<h3>{{ isInEditMode ? 'Update Todo' : 'Add Todo' }}</h3>
+
+
 <div class="card">
     <div class="card-body">
-        <form #formTodo='ngForm' (ngSubmit)="onClick(formTodo)">
+        <form #formTodo='ngForm' (ngSubmit)="OnTodoAdd(formTodo)">
             <div class="form-group">
                 <label for="fname">Add ToDo</label>
                 <input ngModel required name="todoItem" type="text" class="form-control" id="fname">
             </div>
-            <button
-            type="submit"
-             [disabled]="formTodo.invalid" class="btn btn-primary btn-block">Add
+            <button *ngIf="!isInEditMode" type="submit" [disabled]="formTodo.invalid"
+                class="btn btn-primary btn-block">Add
+                Todo</button>
+            <button 
+            (click)="onToDoUpdate()"
+            *ngIf="isInEditMode" type="submit" [disabled]="formTodo.invalid" 
+                class="btn btn-primary btn-block">Update
                 Todo</button>
 
 

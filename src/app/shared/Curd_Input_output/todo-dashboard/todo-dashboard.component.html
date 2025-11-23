@@ -1,11 +1,23 @@
 <div class="row">
+    <!-- form -->
     <div class="col-md-6 mb-4 mb-md-0">
         <app-todo-form
-        (transfer) ='onAdd($event)'
+        (emitTodo) ='getNewTodo($event)'
+
+        [getEditTodo]="editTodo"
+
+        (emitUpdatedObj)="getUpdatedTodo($event)"
         ></app-todo-form>
     </div>
+    <!-- list -->
     <div class="col-md-6">
-        <app-todo-list [todoArr]="todoArr"></app-todo-list>
+        <app-todo-list [todos]="todoArr"
+
+        (emitRemoveId)="getRemoveId($event)"
+
+        (emitEditTodo)="onEditTodo($event)"
+        
+        ></app-todo-list>
 
     </div>
 </div>
